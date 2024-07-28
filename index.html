@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram OAuth Redirect</title>
+</head>
+<body>
+    <h1>Redirect Successful</h1>
+    <p>Authorization Code: <span id="auth-code"></span></p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('auth-code').textContent = params.get('code');
+    </script>
+</body>
+</html>
